@@ -8,4 +8,48 @@
     --cor3: #9EA58D;
     --cor4: #C5B67B;
     --cor5: #7D8758;
+    --fonte-cabin: 'Cabin', sans-serif;
+    --fonte-dm: 'DM Serif Display', serif;
+    --fonte-fjalla: 'Fjalla One', sans-serif;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family:var(--fonte-cabin);
+}
+
+header{
+    height: 80px;
+    background-color: var(--cor2);
+}
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-dm);
+    font-size: 3em;
+    font-style: italic;
+    color: var(--cor5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+nav {
+    background-color: var(--cor2);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.158);
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+    padding: 30px;
+}
+
+nav > a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    padding: 7px;
+    transition-duration: 0.7s;
 }
