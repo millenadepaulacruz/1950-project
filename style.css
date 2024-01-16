@@ -1,0 +1,11 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&display=swap');
+
+:root{
+    --cor1: #EFE6CD;
+    --cor2: #CCC098;
+    --cor3: #9EA58D;
+    --cor4: #C5B67B;
+    --cor5: #7D8758;
+}
