@@ -2,16 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@font-face {
+    font-family: "Chopin";
+    src: url('fonts/chopin-script.regular.ttf') format('truetype');
+    font-family: "Cat Linz";
+    src: url('fonts/CATLinz_1.8.ttf') format('truetype');
+}
 
 :root{
-    --cor1: #D9B9A7;
+    --cor1: antiquewhite;
     --cor2: #A69580;
     --cor3: #A68263;
     --cor4: #735236;
     --cor5: #402F21;
-    --fonte-quicksand:'Quicksand', sans-serif;
+    --cor6: #291e15;
+    --fonte-montserrat:'Montserrat', sans-serif;
     --fonte-dm: 'DM Serif Display', serif;
-    --fonte-fjalla: 'Fjalla One', sans-serif;
+    --fonte-chopin: 'Chopin', cursive;
+    --fonte-cat: 'Cat Linz', cursive;
 }
 
 *{
@@ -20,35 +29,36 @@
 }
 
 body{
-    background-color: var(--cor1);
-    font-family:var(--fonte-quicksand);
-
+    background-color: var(--cor2);
+    font-family:var(--fonte-montserrat);
+    font-weight: 300;
 }
 
 header{
     height: 80px;
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
 }
 header > h1 {
     text-align: center;
     font-family: var(--fonte-dm);
-    font-size: 4em;
+    font-size: 3.5em;
+    color: #291e15;
 }
 
 nav {
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     text-align: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.158);
     padding: 10px;
 }
 
 nav > a {
     text-decoration: none;
-    color: var(--cor5);
+    color: var(--cor6);
     font-weight: bold;
     padding: 30px;
+    font-size: 1em;
 }
 
 nav > a:hover{
@@ -62,36 +72,98 @@ main {
     min-width: 320px;
     max-width: 800px;
     margin: auto;
-    background-color: var(--cor2);
+    background-color: antiquewhite;
     padding: 5px 20px 20px 20px;
     line-height: 1.5em;
+    font-size: 0.9em;
+    color: var(--cor6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.205);
+
 }
 
-#title{ 
+main h1.title{ 
     font-family: var(--fonte-dm);
-    font-size: 3em;
-    padding: 10px;
-    margin: 10px;
+    background-color: var(--cor6);
+    font-size: 2.5em;
+    padding: 15px 3px;
+    margin: 5px 5px 0px 5px;
+    color: var(--cor1);
+    border-radius: 5px 5px 0px 0px;
+    text-indent: 1em;
 }
 
 main h2 {
-    padding: 20px;
     font-family: var(--fonte-dm);
-    font-size: 2em;
+    background-color: var(--cor5);
+    font-size: 1.5em;
+    color: var(--cor1);
+    padding: 15px 0px;
+    margin: 15px 5px 0px 5px;
+    border-radius: 5px 5px 0px 0px;
+    text-indent: 1em;
+}
+
+main p{
+    background-color: var(--cor2);
+    padding: 7px;
+    margin: 0px 5px 15px 5px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+    font-weight: bold;
+
 }
 
 main ul {
     list-style-position: inside;
+    list-style-type: '\00A0';
+    background-color: var(--cor2);
+    color: var(--cor6);
+    font-weight: 400;
+    padding: 5px;
+    margin: 0px 5px 15px 5px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
 }
 
 main img {
     display: block;
     margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
 }
 
-main > aside{
+main > aside {
     background-color: #402F21;
-    color: antiquewhite;
     padding: 5px;
     margin: 10px;
+    border-radius: 5px;
+}
+
+aside > h1 {
+    color: var(--cor1);
+    background-color: #402F21;
+    font-family: var(--fonte-dm);
+    padding: 5px 15px 15px 5px;
+    text-indent: 0.8em;
+}
+
+aside > p {
+    margin: -5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+    color:var(--cor6);
+    font-weight: normal;
+}
+
+footer{
+    background-color: var(--cor6);
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    color: var(--cor1);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}   
+footer > p {
+    margin: auto;
 }
